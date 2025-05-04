@@ -8,7 +8,7 @@
     "mermaid",
     "mermaid-js"
   ],
-  "version": "0.0.3",
+  "version": "0.0.5",
   "scripts": {
     "build": "rimraf types && vite build",
     "ci:publish": "pnpm changeset publish -r",
@@ -31,10 +31,10 @@
   "unpkg": "./dist/umd/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/JsonLee12138/easy-websocket-client"
+    "url": "https://github.com/JsonLee12138/markdown-it-mermaid"
   },
   "bugs": {
-    "url": "https://github.com/JsonLee12138/easy-websocket-client/issues",
+    "url": "https://github.com/JsonLee12138/markdown-it-mermaid/issues",
     "email": "lijunsong2@gmail.com"
   },
   "license": "MIT",
