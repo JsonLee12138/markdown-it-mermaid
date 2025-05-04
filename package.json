@@ -1,0 +1,74 @@
+{
+  "name": "markdown-it-plugin-mermaid",
+  "description": "A Socket class for managing WebSocket connections, with various WebSocket wrappers for reconnection, heartbeat messages and event handling options.",
+  "keywords": [
+    "markdown",
+    "markdown-it",
+    "markdown-it-plugin",
+    "mermaid",
+    "mermaid-js"
+  ],
+  "version": "0.0.1",
+  "scripts": {
+    "build": "rimraf types && vite build",
+    "ci:publish": "pnpm changeset publish -r",
+    "test": "vitest",
+    "lint-staged": "lint-staged"
+  },
+  "type": "module",
+  "files": [
+    "dist",
+    "types",
+    "!dist/**/*.map",
+    "!types/**/*.map",
+    "README.md",
+    "LICENSE",
+    "README.en.md"
+  ],
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/es/index.js",
+  "types": "./types/index.d.ts",
+  "unpkg": "./dist/umd/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JsonLee12138/easy-websocket-client"
+  },
+  "bugs": {
+    "url": "https://github.com/JsonLee12138/easy-websocket-client/issues",
+    "email": "lijunsong2@gmail.com"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "mermaid": "^11.6.0",
+    "markdown-it": "^14.1.0"
+  },
+  "dependencies": {
+    "radash": "^12.1.0"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.28.1",
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
+    "@repo/typescript-config": "workspace:^",
+    "@types/markdown-it": "^14.1.2",
+    "cz-git": "^1.11.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^13.2.0",
+    "oxlint": "^0.16.3",
+    "oxlint-config": "workspace:^",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.7.3",
+    "typescript-api-pro": "workspace:^",
+    "vite": "npm:rolldown-vite@latest",
+    "vite-plugin-dts": "^4.5.3",
+    "vitest": "^3.0.8"
+  },
+  "overrides": {
+    "vite": "npm:rolldown-vite@latest"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git"
+    }
+  }
+}
