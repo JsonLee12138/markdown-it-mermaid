@@ -6,7 +6,7 @@ export interface MarkdownItMermaidOptions {
   delay: number;
 }
 
-const markdownItMermaid = ({ delay = 300 }: Partial<MarkdownItMermaidOptions> = {}) => {
+const markdownItMermaid = ({ delay = 30 }: Partial<MarkdownItMermaidOptions> = {}) => {
   const mermaidRun = debounce({ delay }, () => {
     mermaid.run();
   });

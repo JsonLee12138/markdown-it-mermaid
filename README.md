@@ -26,8 +26,8 @@ import MarkdownIt from 'markdown-it';
 import markdownItMermaid from '@jsonlee_12138/markdown-it-mermaid';
 
 const md = new MarkdownIt();
-// delay默认为300ms, 用于延迟渲染，防止打字机闪动, 非必传
-md.use(markdownItMermaid({ delay: 50 }));
+// delay默认为30ms, 用于延迟渲染，防止打字机闪动, 非必传
+md.use(markdownItMermaid({ delay: 100 }));
 
 const result = md.render(`
 \`\`\`mermaid
@@ -46,7 +46,7 @@ console.log(result);
 
 `@jsonlee_12138/markdown-it-mermaid` 提供以下配置选项：
 
-- `delay`：用于防抖动的延迟时间（单位：毫秒）。默认为 `300`。
+- `delay`：用于防抖动的延迟时间（单位：毫秒）。默认为 `30`, 并且该值不能为 `0`, 否则会导致渲染不生效。
 
 ## 📝 贡献指南
 欢迎提交`issue`或`pull request`，共同完善`Markdown-It-Mermaid`。
