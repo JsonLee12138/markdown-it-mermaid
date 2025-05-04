@@ -1,29 +1,29 @@
-# Markdown-It-Plugin-Mermaid 🚀
+# Markdown-It-Mermaid
 
-**[中文文档](https://github.com/JsonLee12138/hook-fetch/blob/main/README.md)**
+**[中文文档](https://github.com/JsonLee12138/markdown-it-mermaid/blob/main/README.md)**
 
 ## Introduction
 
-`markdown-it-plugin-mermaid` is a plugin for rendering Mermaid diagrams in `markdown-it`. With this plugin, you can write Mermaid code blocks directly in Markdown files and render them as diagrams.
+`markdown-it-mermaid` is a plugin for rendering Mermaid diagrams in `markdown-it`. With this plugin, you can write Mermaid code blocks directly in Markdown files and render them as diagrams.
 
 ## Installation
 
 ```bash
 # Using npm
-npm install markdown-it-plugin-mermaid --save
+npm install @jsonlee_12138/markdown-it-mermaid --save
 
 # Using yarn
-yarn add markdown-it-plugin-mermaid
+yarn add @jsonlee_12138/markdown-it-mermaid
 
 # Using pnpm
-pnpm add markdown-it-plugin-mermaid
+pnpm add @jsonlee_12138/markdown-it-mermaid
 ```
 
 ## Basic Usage
 
 ```typescript
 import MarkdownIt from 'markdown-it';
-import markdownItMermaid from 'markdown-it-plugin-mermaid';
+import markdownItMermaid from '@jsonlee_12138/markdown-it-mermaid';
 
 const md = new MarkdownIt();
 // delay defaults to 300ms, used to prevent flickering during typing, optional
@@ -44,12 +44,12 @@ console.log(result);
 
 ## Configuration Options
 
-`markdown-it-plugin-mermaid` provides the following configuration options:
+`@jsonlee_12138/markdown-it-mermaid` provides the following configuration options:
 
 - `delay`: The debounce delay time in milliseconds. Default is `300`.
 
 ## 📝 Contribution Guide
-Feel free to submit `issues` or `pull requests` to help improve `Markdown-It-Plugin-Mermaid`.
+Feel free to submit `issues` or `pull requests` to help improve `Markdown-It-Mermaid`.
 
 ## 📄 License
 

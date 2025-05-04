@@ -1,6 +1,6 @@
 {
-  "name": "markdown-it-plugin-mermaid",
-  "description": "A Socket class for managing WebSocket connections, with various WebSocket wrappers for reconnection, heartbeat messages and event handling options.",
+  "name": "@jsonlee_12138/markdown-it-mermaid",
+  "description": "@jsonlee_12138/markdown-it-mermaid is a plugin for rendering Mermaid diagrams in markdown-it. With this plugin, you can write Mermaid code blocks directly in Markdown files and render them as diagrams.",
   "keywords": [
     "markdown",
     "markdown-it",

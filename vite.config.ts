@@ -12,7 +12,7 @@ export default defineConfig(({mode})=> {
     build: {
       lib: {
         entry: './src/index.ts',
-        name: 'markdown-it-plugin-mermaid',
+        name: 'markdown-it-mermaid',
         fileName: (format) => {
           return `${format}/index.js`
         },
