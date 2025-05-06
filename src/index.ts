@@ -1,12 +1,13 @@
 import type MarkdownIt from 'markdown-it';
-import mermaid from 'mermaid';
+import mermaid, { type MermaidConfig } from 'mermaid';
 import { debounce } from 'radash';
 
-export interface MarkdownItMermaidOptions {
+export interface MarkdownItMermaidOptions extends MermaidConfig {
   delay: number;
 }
 
-const markdownItMermaid = ({ delay = 30 }: Partial<MarkdownItMermaidOptions> = {}) => {
+const markdownItMermaid = ({ delay = 30, ...mermaidOptions }: Partial<MarkdownItMermaidOptions> = {}) => {
+  mermaid.initialize({ ...mermaidOptions })
   const mermaidRun = debounce({ delay }, () => {
     mermaid.run();
   });
